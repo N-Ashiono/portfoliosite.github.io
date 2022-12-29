@@ -1,0 +1,195 @@
+/* Universal Styles */
+html {
+  font-size: 16px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  line-height: 1.5;
+  font-family: "Montserrat", "Source Sans Pro", sans-serif;
+}
+main {
+  margin: 0 12%;
+}
+p {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.02rem;
+  font-size: 1.2rem;
+  color: #686868;
+  line-height: 1.8;
+}
+a {
+  color: #ef5959;
+}
+a:hover {
+  color: #ff2525;
+}
+hr {
+  border-top: 1px solid #ef5959;
+}
+
+/* Header Styles */
+header:before {
+  content: " ";
+  z-index: 1;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-size: cover;
+}
+header {
+  background-image: url(../images/headerBackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -12.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30rem;
+  margin-bottom: 3rem;
+}
+.homeNav {
+  height: 4rem;
+  width: 100%;
+  padding: 0.45rem;
+  padding-left: 50%;
+  /* margin-left: 45%; */
+  z-index: 2;
+  position: fixed;
+}
+nav {
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+}
+nav a {
+  /* #b3d4fc */
+  color: #ef5959;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+/* nav a:hover {
+  color: #ff2525;
+} */
+.drkMode {
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.name {
+  color: aliceblue;
+  position: relative;
+  z-index: 2;
+  margin: auto;
+}
+
+.name p {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #ef5959;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.name h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+}
+
+/* about me styles */
+#about {
+  margin-bottom: 3rem;
+}
+.aboutMe {
+  margin-bottom: 2rem;
+}
+.aboutMe p {
+  text-align: justify;
+}
+.timeline-item {
+  margin-bottom: 1.25rem;
+}
+.separator {
+  width: 25%;
+  margin-top: 1rem;
+}
+
+/* Projects styles */
+#projects {
+  margin-bottom: 3rem;
+}
+#projects .separator {
+  margin-bottom: 1.25rem;
+}
+.projHeader p {
+  margin-bottom: 0.85rem;
+}
+summary {
+  list-style-type: none;
+  cursor: pointer;
+}
+.project {
+  margin-bottom: 0.75rem;
+}
+.fortuneContent {
+  text-align: center;
+  margin-top: 1.2rem;
+}
+.fortuneButton {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #ef5959;
+  color: #fff;
+  margin-top: 0.5rem;
+}
+#fortune {
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #ef5959;
+  margin-bottom: 0.6rem;
+}
+.fortuneButton:hover {
+  background-color: #ff2525;
+}
+.fortuneButton:active {
+  transform: translateY(3px);
+}
+
+/* Skills section */
+#skills {
+  margin-bottom: 3rem;
+}
+.skillContent {
+  margin-bottom: 1rem;
+}
+.skillList {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.imgCont {
+  width: 55%;
+}
+.skill img {
+  width: 100%;
+}
+
+footer {
+  padding: 1rem 0;
+  text-align: center;
+}
